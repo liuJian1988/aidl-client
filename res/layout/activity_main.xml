@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ljaidlclient.MainActivity" >
+
+    <EditText
+        android:id="@+id/edt_first_num"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:phoneNumber="true" />
+  
+
+    <EditText
+        android:id="@+id/edt_second_num"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/edt_first_num"
+        android:layout_marginLeft="50dp"
+        android:phoneNumber="true" />
+      <TextView 
+        android:layout_alignBottom="@id/edt_second_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"/>
+
+    <Button
+        android:id="@+id/btn_sum"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edt_second_num"
+        android:layout_marginLeft="50dp"
+        android:text="计算" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_sum"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/btn_sum"
+        android:text="--" />
+
+</RelativeLayout>
