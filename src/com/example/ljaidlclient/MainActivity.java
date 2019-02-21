@@ -25,7 +25,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	private TextView tv;
 
 	private IAidlServer mStub;
-
+     
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
